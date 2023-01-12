@@ -10,3 +10,4 @@ class School(models.Model):
     phone = fields.Char('Contact')
     birth_date = fields.Date('Birth of Date: ')
     gender = fields.Selection([('M', 'Male'), ('F', 'Female')], 'Gender')
+    image = fields.Image('Image')

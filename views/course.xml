@@ -1,0 +1,26 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_course_tree">
+            <field name="name">Course</field>
+            <field name="model">school.course</field>
+            <field name="arch" type="xml">
+                <tree string="Course List">
+                    <field name="name"></field>
+                    <field name="course_code"></field>
+                </tree>
+
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="open_view_course_tree">
+            <field name="name">Courses</field>
+            <field name="res_model">school.course</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No record found
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

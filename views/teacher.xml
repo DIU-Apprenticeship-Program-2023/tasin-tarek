@@ -1,10 +1,10 @@
 <odoo>
   <data>
-    <record model="ir.ui.view" id="view_student_tree">
+    <record model="ir.ui.view" id="view_teacher_tree">
       <field name="name">school list</field>
-      <field name="model">school.student</field>
+      <field name="model">school.teacher</field>
       <field name="arch" type="xml">
-        <tree string="Student List">
+        <tree string="Teacher List">
           <field name="name"/>
           <field name="email"/>
           <field name="phone"/>
@@ -15,11 +15,11 @@
     </record>
 
 
-    <record model="ir.ui.view" id="view_student_form">
+    <record model="ir.ui.view" id="view_teacher_form">
       <field name="name">school list</field>
-      <field name="model">school.student</field>
+      <field name="model">school.teacher</field>
       <field name="arch" type="xml">
-        <form string="Student Form">
+        <form string="Teacher Form">
           <h1 class="text-center">
             Daffodil International University
           </h1>
@@ -41,9 +41,9 @@
 
 
 
-    <record model="ir.actions.act_window" id="open_view_student_tree">
-      <field name="name">Student List</field>
-      <field name="res_model">school.student</field>
+    <record model="ir.actions.act_window" id="open_view_teacher_tree">
+      <field name="name">Teacher Info</field>
+      <field name="res_model">school.teacher</field>
       <field name="view_mode">tree,form</field>
       <field name="help" type="html">
           <p class="o_view_nocontent_smiling_face">
@@ -51,7 +51,6 @@
           </p>
       </field>
     </record>
-
 
 
 

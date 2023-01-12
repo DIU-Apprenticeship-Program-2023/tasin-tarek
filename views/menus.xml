@@ -1,10 +1,27 @@
 <odoo>
     <data>
-        <menuitem name="School" id="school.school_menu_root"/>
+        <menuitem name="Daffodil Internation University" id="school.school_menu_root"/>
 
         <menuitem name="Student" id="school.student_list"
                   parent="school.school_menu_root"
                   action="open_view_student_tree"
+        />
+        <menuitem name="Teacher" id="school.teacher_list"
+                  parent="school.school_menu_root"
+                  action="open_view_teacher_tree"
+        />
+        <menuitem name="Section" id="school.section_list"
+                  parent="school.school_menu_root"
+                  action="open_view_section_tree"
+        />
+        <menuitem name="Course" id="school.course_list"
+                  parent="school.school_menu_root"
+                  action="open_view_course_tree"
+        />
+        <menuitem name="Registration" id="school.registration_list"
+                  parent="school.school_menu_root"
+                  action="open_view_registration_tree"
+
         />
     </data>
 </odoo>

@@ -28,6 +28,10 @@
         'security/ir.model.access.csv',
         #views
         'views/student.xml',
+        'views/teacher.xml',
+        'views/section.xml',
+        'views/course.xml',
+        'views/registration.xml',
         #menus
         'views/menus.xml',
     ],
